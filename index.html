@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Demo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3"><i class="fa fa-film"></i>Kevin's Newspaper</h1>
+        <h2 class="lead"><em>Powered for KIEI-924</em></h2>
+      </div>
+    </div>
+
+    <div id="fact" class="row">
+      <div class="col-sm-4">
+        <h2>Fact of The Day</h2>
+          <p> Did you know that today is the day that <script src="http://numbersapi.com/3/11/date?write&fragment"></script>?
+            </p>
+      </div>
+
+      <div class="col-sm-4">
+        <h2>Weather</h2>
+        <p>
+          Check out today's weather...
+        </p>
+
+        <div id="weather" class="card">
+          <img class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
+          <div class="card-body">
+            <h4 class="card-title-2">Paris</h4>
+            <p class="card-text-2">It is 81 degrees outside.</p>
+            <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-4">
+          <h2>Movie Reviews</h2>
+          <p>
+            The latest and greatest flicks...
+          </p>
+          <div class="row-2">
+            <!--  Our JS code will insert HTML here -->
+          </div>
+
+        </div>
+
+    </div>
+</div>
+
+  <script type="text/javascript" src="weather.js"> </script>
+  <script src="nyt.js"></script>
+
+</body>
+</html>
